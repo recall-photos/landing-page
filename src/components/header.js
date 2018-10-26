@@ -1,33 +1,67 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, StaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
-const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
+import 'tachyons/css/tachyons.min.css'
+import styled from 'styled-components'
+
+export function Header({ siteTitle }) {
+  return (
+    <Nav>
+      <LeftContainer>
+        <Logo>
+          <Link to="/">
+            <LogoImage alt={siteTitle} />
+          </Link>
+        </Logo>
+      </LeftContainer>
+      <RightContainer>
+        <Link to="/about">
+          <Url>About</Url>
         </Link>
-      </h1>
-    </div>
-  </div>
+        <Link to="/#0">
+          <Button>Sign In</Button>
+        </Link>
+      </RightContainer>
+    </Nav>
+  )
+}
+
+const Nav = styled.main.attrs({
+  className: 'flex justify-between bb b--white-10',
+})``
+const LeftContainer = styled.main.attrs({
+  className: 'link black-70 black-white no-underline flex items-center',
+})``
+const Logo = styled.main.attrs({
+  className: 'dib h1 w4 nt2',
+})``
+const RightContainer = styled.h2.attrs({
+  className: 'flex-grow flex items-center',
+})``
+const Url = styled.h2.attrs({
+  className: 'f6 link dib black dim mr3 mr4-ns',
+})``
+const Button = styled.h2.attrs({
+  className:
+    'f6 dib black bg-animate hover-bg-black hover-black no-underline pv2 ph4 br-pill ba b--black-20',
+})``
+
+const LogoImage = () => (
+  <StaticQuery
+    query={graphql`
+      query {
+        logo: file(relativePath: { eq: "logo.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 500) {
+              ...GatsbyImageSharpFluid_noBase64
+            }
+          }
+        }
+      }
+    `}
+    render={data => <Img fluid={data.logo.childImageSharp.fluid} />}
+  />
 )
 
 export default Header
