@@ -28,7 +28,7 @@ export function Header({ siteTitle }) {
 }
 
 const Nav = styled.main.attrs({
-  className: 'flex justify-between bb b--white-10',
+  className: 'flex justify-between bb b--white-70',
 })``
 const LeftContainer = styled.main.attrs({
   className: 'link black-70 black-white no-underline flex items-center',
@@ -47,6 +47,8 @@ const Button = styled.h2.attrs({
     'f6 dib black bg-animate hover-bg-black hover-black no-underline pv2 ph4 br-pill ba b--black-20',
 })``
 
+export default Header
+
 const LogoImage = () => (
   <StaticQuery
     query={graphql`
@@ -63,5 +65,3 @@ const LogoImage = () => (
     render={data => <Img fluid={data.logo.childImageSharp.fluid} />}
   />
 )
-
-export default Header
