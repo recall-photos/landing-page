@@ -6,25 +6,26 @@ import styled from 'styled-components'
 
 const Photos = props => (
 	<PhotosMainContainer>
-		<PhotoContainer>
-			<Photo>
-				<Photo2>
-					<div style={{ position: 'relative' }}>
-						<Img
-							fluid={
-								props.data.childImageSharp.fluid
-							}
-							css={{
-								top: 0,
-								left: 0,
-								right: 0,
-								bottom: 0,
-							}}
-						/>
-					</div>
-				</Photo2>
-			</Photo>
-		</PhotoContainer>
+		{props.data.edges.map(({ node }) => (
+			<PhotoContainer>
+				<Photo>
+					<Photo2>
+						<div style={{ position: 'relative' }}>
+							<Img
+								key={node.id}
+								fluid={node.childImageSharp.fluid}
+								css={{
+									top: 0,
+									left: 0,
+									right: 0,
+									bottom: 0,
+								}}
+							/>
+						</div>
+					</Photo2>
+				</Photo>
+			</PhotoContainer>
+		))}
 	</PhotosMainContainer>
 )
 
