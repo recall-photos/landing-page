@@ -8,7 +8,7 @@ class IndexPage extends React.Component {
 	render() {
     	return (
 			<Layout>
-				<Photos data={this.props.data.allFile}/>
+				<Photos data={this.props.data.allFile} />
 				<h1>All your photos safely under your control</h1>
 				<p>
 					An decentralized platform to safely store your photos. Sign up to
@@ -25,7 +25,7 @@ export const fluidImage = graphql`
 	fragment fluidImage on File {
 	  childImageSharp {
 	  	id
-	    fluid(maxWidth: 1000) {
+	    fluid(maxWidth: 300, maxHeight: 400) {
 	      ...GatsbyImageSharpFluid_tracedSVG
 	    }
 	  }
