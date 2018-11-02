@@ -1,9 +1,8 @@
 import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
-
-import Header from './header'
+import Sticky from 'react-stickynode'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -29,20 +28,14 @@ const Layout = ({ children }) => (
         </Helmet>
         <div
           style={{
-            backgroundColor: '#DDDDDD',
+            margin: '0 auto',
+            maxWidth: 2580,
+            padding: '0 0 0',
+            paddingTop: 0,
+            zIndex: 0,
           }}
         >
-          <div
-            style={{
-              margin: '0 auto',
-              maxWidth: 1024,
-              padding: '0 0 0',
-              paddingTop: 0,
-            }}
-          >
-            <Header siteTitle={data.site.siteMetadata.title} />
-            {children}
-          </div>
+          {children}
         </div>
       </>
     )}

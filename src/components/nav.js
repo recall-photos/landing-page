@@ -5,9 +5,9 @@ import Img from 'gatsby-image'
 import 'tachyons/css/tachyons.min.css'
 import styled from 'styled-components'
 
-export function Header({ siteTitle }) {
+export function Nav({ siteTitle }) {
   return (
-    <Nav>
+    <NavMenu>
       <LeftContainer>
         <Logo>
           <Link to="/">
@@ -23,12 +23,12 @@ export function Header({ siteTitle }) {
           <Button>Sign In</Button>
         </Link>
       </RightContainer>
-    </Nav>
+    </NavMenu>
   )
 }
 
-const Nav = styled.main.attrs({
-  className: 'flex justify-between bb b--white-70',
+const NavMenu = styled.main.attrs({
+  className: 'absolute flex justify-between ph4 z-max',
 })``
 const LeftContainer = styled.main.attrs({
   className: 'link black-70 black-white no-underline flex items-center',
@@ -47,7 +47,7 @@ const Button = styled.h2.attrs({
     'f6 dib black bg-animate hover-bg-black hover-black no-underline pv2 ph4 br-pill ba b--black-20',
 })``
 
-export default Header
+export default Nav
 
 const LogoImage = () => (
   <StaticQuery
