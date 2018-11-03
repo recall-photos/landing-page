@@ -36,19 +36,19 @@ class IndexPage extends React.Component {
 }
 
 const HeaderWrapper = styled.main.attrs({
-  className: 'relative dt bg-washed-red w-100',
+  className: 'dt bg-washed-red w-100',
 })``
 
 const InnerWrapper = styled.main.attrs({
-  className: '',
+  className: 'flex',
 })``
 
 const PhotosWrapper = styled.main.attrs({
-  className: 'fl w-100 w-50-ns',
+  className: 'dtc w-100 w-50-ns',
 })``
 
 const TextWrapper = styled.main.attrs({
-  className: 'fr dtc w-100 w-50-ns pa5',
+  className: 'dtc self-center w-100 w-50-ns pa5',
 })``
 
 const Header = styled.main.attrs({
