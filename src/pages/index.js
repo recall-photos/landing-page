@@ -15,31 +15,61 @@ class IndexPage extends React.Component {
       <Layout>
         <HeaderWrapper>
           <Nav />
-          <InnerWrapper>
+          <HeaderInnerWrapper>
             <PhotosWrapper>
               <Photos data={this.props.data.allFile} />
             </PhotosWrapper>
-            <TextWrapper>
-              <Header>No more doubts about who owns the photos.</Header>
-              <Description>
+            <HeaderTextWrapper>
+              <HeaderTitle>No more doubts about who owns the photos.</HeaderTitle>
+              <HeaderDescription>
                 An alternative way to safely store your photos online, so you are always in control. Sign up to get early access.
-              </Description>
+              </HeaderDescription>
               <Button>Sign in with</Button>
-            </TextWrapper>
-          </InnerWrapper>
+            </HeaderTextWrapper>
+          </HeaderInnerWrapper>
         </HeaderWrapper>
         <Section>
+          <BenefitsWrapper>
+            <BenefitsRow>
+              <BenefitBox>
+                <Title>Benefit 1</Title>
+                <Paragraph>An alternative way to safely store your photos online, so you are always in control. Sign up to get early access.</Paragraph>
+              </BenefitBox>
+              <BenefitBox>
+                <Title>Benefit 2</Title>
+                <Paragraph>An alternative way to safely store your photos online, so you are always in control. Sign up to get early access.</Paragraph>
+              </BenefitBox>
+            </BenefitsRow>
+            <BenefitsRow>
+              <BenefitBox>
+                <Title>Benefit 3</Title>
+                <Paragraph>An alternative way to safely store your photos online, so you are always in control. Sign up to get early access.</Paragraph>
+              </BenefitBox>
+              <BenefitBox>
+                <Title>Benefit 4</Title>
+                <Paragraph>An alternative way to safely store your photos online, so you are always in control. Sign up to get early access.</Paragraph>
+              </BenefitBox>
+            </BenefitsRow>
+          </BenefitsWrapper>
+        </Section>
+        <Section>
+          <InnerWrapper>
+            <Title>Open Source</Title>
+            <Paragraph>An alternative way to safely store your photos online, so you are always in control. Sign up to get early access.</Paragraph>
+          </InnerWrapper>
         </Section>
       </Layout>
     )
   }
 }
 
+// Header Section
+
 const HeaderWrapper = styled.main.attrs({
   className: 'dt bg-washed-red w-100',
 })``
 
-const InnerWrapper = styled.main.attrs({
+const HeaderInnerWrapper = styled.main.attrs({
   className: 'flex',
 })``
 
@@ -47,25 +77,55 @@ const PhotosWrapper = styled.main.attrs({
   className: 'dtc w-100 w-50-ns',
 })``
 
-const TextWrapper = styled.main.attrs({
+const HeaderTextWrapper = styled.main.attrs({
   className: 'dtc self-center w-100 w-50-ns pa5',
 })``
 
-const Header = styled.main.attrs({
+const HeaderTitle = styled.main.attrs({
   className: 'f2',
 })``
 
-const Description = styled.main.attrs({
+const HeaderDescription = styled.main.attrs({
   className: 'mt2 f4 lh-copy',
+})``
+
+// Benefits Section
+
+const BenefitsWrapper = styled.main.attrs({
+  className: 'flex justify-center items-center ph2 pv6',
+})``
+
+const BenefitsRow = styled.main.attrs({
+  className: 'flex-column ph5',
+})``
+
+const BenefitBox = styled.main.attrs({
+  className: 'pa4',
+})``
+
+// Open Source Section
+
+const InnerWrapper = styled.main.attrs({
+  className: 'dt bg-washed-red w-100 ph6 pv6',
+})``
+
+// Shared Elements
+
+const Section = styled.main.attrs({
+  className: 'dt w-100',
+})``
+
+const Title = styled.main.attrs({
+  className: 'f2',
+})``
+
+const Paragraph = styled.main.attrs({
+  className: 'mt2 f5 lh-copy',
 })``
 
 const Button = styled.h2.attrs({
   className:
     'f6 mt4 dib black bg-animate hover-bg-black hover-black no-underline pv2 ph4 br-pill ba b--black-20',
-})``
-
-const Section = styled.main.attrs({
-  className: '',
 })``
 
 export default IndexPage
