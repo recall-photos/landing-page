@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="185px" viewBox="0 0 706 492" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>sharing</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="49.9992901%" y1="100%" x2="49.9992901%" y2="-6.03202798e-15%" id="linearGradient-1">
+            <stop stop-color="#808080" stop-opacity="0.25" offset="0%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.12" offset="54%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="-3.33666464e-14%" id="linearGradient-2">
+            <stop stop-color="#808080" stop-opacity="0.25" offset="0%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.12" offset="54%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100.00587%" x2="50%" y2="0.00586992252%" id="linearGradient-3">
+            <stop stop-color="#808080" stop-opacity="0.25" offset="0%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.12" offset="54%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-4">
+            <stop stop-color="#808080" stop-opacity="0.25" offset="0%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.12" offset="54%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sharing" fill-rule="nonzero">
+            <rect id="Rectangle-path" fill="url(#linearGradient-1)" x="0.92" y="19.87" width="704.29" height="471.18"></rect>
+            <rect id="Rectangle-path" fill="#FFFFFF" x="8.36" y="24.83" width="689.41" height="17.36"></rect>
+            <rect id="Rectangle-path" fill="#F5F5F5" x="8.36" y="42.19" width="689.41" height="439.77"></rect>
+            <circle id="Oval" fill="#FF5252" cx="22.3" cy="33.93" r="4.85"></circle>
+            <circle id="Oval" fill="#FFFF00" cx="35.64" cy="33.93" r="4.85"></circle>
+            <circle id="Oval" fill="#69F0AE" cx="48.97" cy="33.93" r="4.85"></circle>
+            <g id="Group" opacity="0.2" transform="translate(627.000000, 0.000000)" fill="#FFFFFF">
+                <path d="M16.93,5.35 C30.8,5 56.2,0.2 56.2,0.2 C56.3891698,0.331423884 56.5695537,0.475062945 56.74,0.63 C49.5,1.93 27.55,5.68 16.93,5.35 Z" id="Shape"></path>
+                <path d="M9.28,4.73 C3.19,5.95 1.28,15 5.84,18.98 C11.17,23.67 12.94,72.98 12.94,72.98 L10.03,72.98 C10.03,72.98 8.25,23.68 2.93,18.98 C-2.25,14.42 0.95,3.22 9.28,4.73 Z" id="Shape"></path>
+                <path d="M20.04,23.68 C24.6471516,24.2318008 29.2803237,24.5388986 33.92,24.6 C29.3194876,24.645781 24.719763,24.4488407 20.14,24.01 L20.04,23.68 Z" id="Shape"></path>
+            </g>
+            <rect id="Rectangle-path" fill="url(#linearGradient-2)" transform="translate(154.742893, 372.431181) rotate(-0.200000) translate(-154.742893, -372.431181) " x="79.9828931" y="287.251181" width="149.52" height="170.36"></rect>
+            <rect id="Rectangle-path" fill="#FFFFFF" transform="translate(154.739472, 371.451222) rotate(-0.200000) translate(-154.739472, -371.451222) " x="81.7294723" y="289.801222" width="146.02" height="163.3"></rect>
+            <rect id="b2ae9909-950a-48f1-9bb3-12cdfe841228" fill="#6C63FF" opacity="0.2" transform="translate(154.413379, 352.517454) rotate(-0.200000) translate(-154.413379, -352.517454) " x="88.3033788" y="293.612454" width="132.22" height="117.81"></rect>
+            <rect id="Rectangle-path" fill="url(#linearGradient-2)" transform="translate(353.421683, 372.427658) rotate(-0.200000) translate(-353.421683, -372.427658) " x="278.661683" y="287.247658" width="149.52" height="170.36"></rect>
+            <rect id="Rectangle-path" fill="#FFFFFF" transform="translate(353.428262, 371.447664) rotate(-0.200000) translate(-353.428262, -371.447664) " x="280.418262" y="289.797664" width="146.02" height="163.3"></rect>
+            <rect id="7fdfae29-e77a-475e-b3a8-6f398929fc3d" fill="#6C63FF" opacity="0.2" transform="translate(353.102168, 352.513896) rotate(-0.200000) translate(-353.102168, -352.513896) " x="286.992168" y="293.608896" width="132.22" height="117.81"></rect>
+            <rect id="Rectangle-path" fill="url(#linearGradient-3)" transform="translate(552.120472, 372.424101) rotate(-0.200000) translate(-552.120472, -372.424101) " x="477.360472" y="287.244101" width="149.52" height="170.36"></rect>
+            <rect id="Rectangle-path" fill="#FFFFFF" transform="translate(552.117051, 371.444107) rotate(-0.200000) translate(-552.117051, -371.444107) " x="479.107051" y="289.794107" width="146.02" height="163.3"></rect>
+            <rect id="6236ce0a-1624-423a-a503-2e1c13798f51" fill="#6C63FF" opacity="0.2" transform="translate(551.780958, 352.510374) rotate(-0.200000) translate(-551.780958, -352.510374) " x="485.670958" y="293.605374" width="132.22" height="117.81"></rect>
+            <rect id="Rectangle-path" fill="url(#linearGradient-4)" transform="translate(154.038413, 164.884889) rotate(-0.200000) translate(-154.038413, -164.884889) " x="79.2784126" y="79.7048887" width="149.52" height="170.36"></rect>
+            <rect id="Rectangle-path" fill="#FFFFFF" transform="translate(154.034957, 163.894895) rotate(-0.200000) translate(-154.034957, -163.894895) " x="81.0249569" y="82.2448947" width="146.02" height="163.3"></rect>
+            <rect id="667f5701-fa69-4488-83e8-f16effbd10e8" fill="#6C63FF" opacity="0.2" transform="translate(153.708863, 144.961162) rotate(-0.200000) translate(-153.708863, -144.961162) " x="87.5988634" y="86.056162" width="132.22" height="117.81"></rect>
+            <rect id="Rectangle-path" fill="url(#linearGradient-4)" transform="translate(550.043608, 161.322612) rotate(-0.200000) translate(-550.043608, -161.322612) " x="475.283608" y="76.1426123" width="149.52" height="170.36"></rect>
+            <rect id="Rectangle-path" fill="#FFFFFF" transform="translate(550.040153, 160.332618) rotate(-0.200000) translate(-550.040153, -160.332618) " x="477.030153" y="78.6826184" width="146.02" height="163.3"></rect>
+            <rect id="0b67e3b0-1652-4b35-9f46-d1dfe4a7d2ba" fill="#6C63FF" opacity="0.2" transform="translate(549.704094, 141.408886) rotate(-0.200000) translate(-549.704094, -141.408886) " x="483.594094" y="82.5038856" width="132.22" height="117.81"></rect>
+            <rect id="Rectangle-path" fill="url(#linearGradient-4)" transform="translate(352.392038, 163.392527) rotate(-0.200000) translate(-352.392038, -163.392527) " x="277.632038" y="78.212527" width="149.52" height="170.36"></rect>
+            <rect id="Rectangle-path" fill="#FFFFFF" transform="translate(352.388582, 162.402533) rotate(-0.200000) translate(-352.388582, -162.402533) " x="279.378582" y="80.752533" width="146.02" height="163.3"></rect>
+            <rect id="608afd5a-06ad-4bbe-9290-34659b79a621" fill="#6C63FF" opacity="0.2" transform="translate(352.062524, 143.478800) rotate(-0.200000) translate(-352.062524, -143.478800) " x="285.952524" y="84.5738002" width="132.22" height="117.81"></rect>
+        </g>
+    </g>
+</svg>

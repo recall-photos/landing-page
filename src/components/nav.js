@@ -40,11 +40,11 @@ const RightContainer = styled.h2.attrs({
   className: 'flex-grow flex items-center',
 })``
 const Url = styled.h2.attrs({
-  className: 'f6 link dib black dim mr3 mr4-ns',
+  className: 'f6 link dib white dim mr3 mr4-ns helvetica',
 })``
 const Button = styled.h2.attrs({
   className:
-    'f6 dib black bg-animate hover-bg-black hover-black no-underline pv2 ph4 br-pill ba b--black-20',
+    'f6 dib white bg-animate hover-bg-purple hover-white no-underline pv2 ph4 br-pill ba b--white-20 helvetica',
 })``
 
 export default Nav

@@ -1,9 +1,14 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, withPrefix } from 'gatsby'
 import Sticky from 'react-stickynode'
 
 import 'tachyons/css/tachyons.min.css'
 import styled from 'styled-components'
+
+import Collection from '../svgs/collection.svg'
+import Security from '../svgs/security.svg'
+import Server from '../svgs/server.svg'
+import Sharing from '../svgs/sharing.svg'
 
 import Layout from '../components/layout'
 import Nav from '../components/nav'
@@ -16,9 +21,6 @@ class IndexPage extends React.Component {
         <HeaderSection>
           <Nav />
           <HeaderWrapper>
-            <PhotosWrapper>
-              <Photos data={this.props.data.allFile} />
-            </PhotosWrapper>
             <HeaderTextWrapper>
               <HeaderTitle>No more doubts about who owns the photos.</HeaderTitle>
               <HeaderDescription>
@@ -26,27 +28,34 @@ class IndexPage extends React.Component {
               </HeaderDescription>
               <Button>Sign in with</Button>
             </HeaderTextWrapper>
+              <PhotosWrapper>
+              <Photos data={this.props.data.allFile} />
+            </PhotosWrapper>
           </HeaderWrapper>
         </HeaderSection>
         <BenefitsSection>
           <BenefitsWrapper>
             <BenefitsRow>
               <BenefitBox>
-                <Title>Benefit 1</Title>
+                <Security />
+                <Title>Ownership</Title>
                 <Paragraph>An alternative way to safely store your photos online, so you are always in control. Sign up to get early access.</Paragraph>
               </BenefitBox>
               <BenefitBox>
-                <Title>Benefit 2</Title>
+                <Sharing />
+                <Title>Easy to Use</Title>
                 <Paragraph>An alternative way to safely store your photos online, so you are always in control. Sign up to get early access.</Paragraph>
               </BenefitBox>
             </BenefitsRow>
             <BenefitsRow>
               <BenefitBox>
-                <Title>Benefit 3</Title>
+                <Server />
+                <Title>Descentralised</Title>
                 <Paragraph>An alternative way to safely store your photos online, so you are always in control. Sign up to get early access.</Paragraph>
               </BenefitBox>
               <BenefitBox>
-                <Title>Benefit 4</Title>
+                <Collection />
+                <Title>Searchable</Title>
                 <Paragraph>An alternative way to safely store your photos online, so you are always in control. Sign up to get early access.</Paragraph>
               </BenefitBox>
             </BenefitsRow>
@@ -60,8 +69,8 @@ class IndexPage extends React.Component {
         </OSSSection>
         <ContactsSection>
           <ContactsWrapper>
-            <Title>Open Source</Title>
-            <Paragraph>An alternative way to safely store your photos online, so you are always in control. Sign up to get early access.</Paragraph>
+            <Title>Stay up to date.</Title>
+            <Paragraph>Get notified about recall news, updates and be the first to get early acess to a safer way to store photos online.</Paragraph>
           </ContactsWrapper>
         </ContactsSection>
       </Layout>
@@ -72,7 +81,7 @@ class IndexPage extends React.Component {
 // Header Section
 
 const HeaderSection = styled.main.attrs({
-  className: 'dt bg-washed-red w-100',
+  className: 'dt bg-purple w-100',
 })``
 
 const HeaderWrapper = styled.main.attrs({
@@ -88,11 +97,11 @@ const HeaderTextWrapper = styled.main.attrs({
 })``
 
 const HeaderTitle = styled.main.attrs({
-  className: 'f2',
+  className: 'f2 white helvetica',
 })``
 
 const HeaderDescription = styled.main.attrs({
-  className: 'mt2 f4 lh-copy',
+  className: 'mt2 f4 white lh-copy helvetica',
 })``
 
 // Benefits Section
@@ -110,7 +119,7 @@ const BenefitsRow = styled.main.attrs({
 })``
 
 const BenefitBox = styled.main.attrs({
-  className: 'pa4',
+  className: 'pa4 pv5',
 })``
 
 // Open Source Section
@@ -136,16 +145,16 @@ const ContactsWrapper = styled.main.attrs({
 // Shared Elements
 
 const Title = styled.main.attrs({
-  className: 'f2',
+  className: 'f2 mt5 tc helvetica',
 })``
 
 const Paragraph = styled.main.attrs({
-  className: 'mt2 f5 lh-copy',
+  className: 'mt2 f5 tc lh-copy helvetica',
 })``
 
 const Button = styled.h2.attrs({
   className:
-    'f6 mt4 dib black bg-animate hover-bg-black hover-black no-underline pv2 ph4 br-pill ba b--black-20',
+    'f6 mt4 dib white bg-animate hover-bg-white hover-purple no-underline pv2 ph4 br-pill ba b--white-20 helvetica',
 })``
 
 export default IndexPage
