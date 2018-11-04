@@ -13,9 +13,9 @@ class IndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <HeaderWrapper>
+        <HeaderSection>
           <Nav />
-          <HeaderInnerWrapper>
+          <HeaderWrapper>
             <PhotosWrapper>
               <Photos data={this.props.data.allFile} />
             </PhotosWrapper>
@@ -26,9 +26,9 @@ class IndexPage extends React.Component {
               </HeaderDescription>
               <Button>Sign in with</Button>
             </HeaderTextWrapper>
-          </HeaderInnerWrapper>
-        </HeaderWrapper>
-        <Section>
+          </HeaderWrapper>
+        </HeaderSection>
+        <BenefitsSection>
           <BenefitsWrapper>
             <BenefitsRow>
               <BenefitBox>
@@ -51,13 +51,19 @@ class IndexPage extends React.Component {
               </BenefitBox>
             </BenefitsRow>
           </BenefitsWrapper>
-        </Section>
-        <Section>
-          <InnerWrapper>
+        </BenefitsSection>
+        <OSSSection>
+          <OSSWrapper>
             <Title>Open Source</Title>
             <Paragraph>An alternative way to safely store your photos online, so you are always in control. Sign up to get early access.</Paragraph>
-          </InnerWrapper>
-        </Section>
+          </OSSWrapper>
+        </OSSSection>
+        <ContactsSection>
+          <ContactsWrapper>
+            <Title>Open Source</Title>
+            <Paragraph>An alternative way to safely store your photos online, so you are always in control. Sign up to get early access.</Paragraph>
+          </ContactsWrapper>
+        </ContactsSection>
       </Layout>
     )
   }
@@ -65,11 +71,11 @@ class IndexPage extends React.Component {
 
 // Header Section
 
-const HeaderWrapper = styled.main.attrs({
+const HeaderSection = styled.main.attrs({
   className: 'dt bg-washed-red w-100',
 })``
 
-const HeaderInnerWrapper = styled.main.attrs({
+const HeaderWrapper = styled.main.attrs({
   className: 'flex',
 })``
 
@@ -91,6 +97,10 @@ const HeaderDescription = styled.main.attrs({
 
 // Benefits Section
 
+const BenefitsSection = styled.main.attrs({
+  className: 'dt w-100',
+})``
+
 const BenefitsWrapper = styled.main.attrs({
   className: 'flex justify-center items-center ph2 pv6',
 })``
@@ -105,15 +115,25 @@ const BenefitBox = styled.main.attrs({
 
 // Open Source Section
 
-const InnerWrapper = styled.main.attrs({
+const OSSSection = styled.main.attrs({
+  className: 'dt w-100',
+})``
+
+const OSSWrapper = styled.main.attrs({
   className: 'dt bg-washed-red w-100 ph6 pv6',
 })``
 
-// Shared Elements
+// Contacts Section
 
-const Section = styled.main.attrs({
+const ContactsSection = styled.main.attrs({
   className: 'dt w-100',
 })``
+
+const ContactsWrapper = styled.main.attrs({
+  className: 'dt w-100 ph6 pv6',
+})``
+
+// Shared Elements
 
 const Title = styled.main.attrs({
   className: 'f2',
