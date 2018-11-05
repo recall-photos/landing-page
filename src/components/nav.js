@@ -28,7 +28,7 @@ export function Nav({ siteTitle }) {
 }
 
 const NavMenu = styled.main.attrs({
-  className: 'absolute flex justify-between left-0 right-0 ph4 z-max',
+  className: 'absolute flex justify-between left-0 right-0 ph5 z-max',
 })``
 const LeftContainer = styled.main.attrs({
   className: 'link black-70 black-white no-underline flex items-center',

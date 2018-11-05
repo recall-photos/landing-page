@@ -6,6 +6,9 @@ import 'tachyons/css/tachyons.min.css'
 import styled from 'styled-components'
 
 import Collection from '../svgs/collection.svg'
+import Collaboration from '../svgs/collaboration.svg'
+import Github from '../svgs/github.svg'
+import Newsletter from '../svgs/newsletter.svg'
 import Security from '../svgs/security.svg'
 import Server from '../svgs/server.svg'
 import Sharing from '../svgs/sharing.svg'
@@ -22,13 +25,16 @@ class IndexPage extends React.Component {
           <Nav />
           <HeaderWrapper>
             <HeaderTextWrapper>
-              <HeaderTitle>No more doubts about who owns the photos.</HeaderTitle>
+              <HeaderTitle>
+                No more doubts about who owns the photos.
+              </HeaderTitle>
               <HeaderDescription>
-                An alternative way to safely store your photos online, so you are always in control. Sign up to get early access.
+                An alternative way to safely store your photos online, so you
+                are always in control. Sign up to get early access.
               </HeaderDescription>
               <Button>Sign in with</Button>
             </HeaderTextWrapper>
-              <PhotosWrapper>
+            <PhotosWrapper>
               <Photos data={this.props.data.allFile} />
             </PhotosWrapper>
           </HeaderWrapper>
@@ -36,47 +42,85 @@ class IndexPage extends React.Component {
         <BenefitsSection>
           <BenefitsWrapper>
             <BenefitsRow>
-              <BenefitBox>
-                <Security />
-                <Title>Ownership</Title>
-                <Paragraph>An alternative way to safely store your photos online, so you are always in control. Sign up to get early access.</Paragraph>
-              </BenefitBox>
-              <BenefitBox>
-                <Sharing />
-                <Title>Easy to Use</Title>
-                <Paragraph>An alternative way to safely store your photos online, so you are always in control. Sign up to get early access.</Paragraph>
-              </BenefitBox>
+              <BenefitsBox>
+                <BenefitsSvg>
+                  <Security />
+                </BenefitsSvg>
+                <BenefitsTitle>Ownership</BenefitsTitle>
+                <BenefitsParagraph>
+                  An alternative way to safely store your photos online, so you
+                  are always in control. Sign up to get early access.
+                </BenefitsParagraph>
+              </BenefitsBox>
+              <BenefitsBox>
+                <BenefitsSvg>
+                  <Sharing />
+                </BenefitsSvg>
+                <BenefitsTitle>Easy to Use</BenefitsTitle>
+                <BenefitsParagraph>
+                  An alternative way to safely store your photos online, so you
+                  are always in control. Sign up to get early access.
+                </BenefitsParagraph>
+              </BenefitsBox>
             </BenefitsRow>
             <BenefitsRow>
-              <BenefitBox>
-                <Server />
-                <Title>Descentralised</Title>
-                <Paragraph>An alternative way to safely store your photos online, so you are always in control. Sign up to get early access.</Paragraph>
-              </BenefitBox>
-              <BenefitBox>
-                <Collection />
-                <Title>Searchable</Title>
-                <Paragraph>An alternative way to safely store your photos online, so you are always in control. Sign up to get early access.</Paragraph>
-              </BenefitBox>
+              <BenefitsBox>
+                <BenefitsSvg>
+                  <Server />
+                </BenefitsSvg>
+                <BenefitsTitle>Descentralised</BenefitsTitle>
+                <BenefitsParagraph>
+                  An alternative way to safely store your photos online, so you
+                  are always in control. Sign up to get early access.
+                </BenefitsParagraph>
+              </BenefitsBox>
+              <BenefitsBox>
+                <BenefitsSvg>
+                  <Collection />
+                </BenefitsSvg>
+                <BenefitsTitle>Searchable</BenefitsTitle>
+                <BenefitsParagraph>
+                  An alternative way to safely store your photos online, so you
+                  are always in control. Sign up to get early access.
+                </BenefitsParagraph>
+              </BenefitsBox>
             </BenefitsRow>
           </BenefitsWrapper>
         </BenefitsSection>
         <OSSSection>
           <OSSWrapper>
-            <Title>Open Source</Title>
-            <Paragraph>An alternative way to safely store your photos online, so you are always in control. Sign up to get early access.</Paragraph>
+            <OSSSvg>
+              <Github />
+            </OSSSvg>
+            <OSSTextWrapper>
+              <OSSTitle>Open Source</OSSTitle>
+              <OSSParagraph>
+                Help us create the best solution to safely store your photos online.
+              </OSSParagraph>
+            </OSSTextWrapper>
+            <OSSButton>Contribute to Recall on Github</OSSButton>
           </OSSWrapper>
         </OSSSection>
         <ContactsSection>
           <ContactsWrapper>
-            <Title>Stay up to date.</Title>
-            <Paragraph>Get notified about recall news, updates and be the first to get early acess to a safer way to store photos online.</Paragraph>
+            <ContactsSvg>
+              <Newsletter />
+            </ContactsSvg>
+            <ContactsTextWrapper>
+              <ContactsTitle>Stay up to date.</ContactsTitle>
+              <ContactsParagraph>
+                Get notified about recall news, updates and be the first to get
+                early acess to a safer way to store photos online.
+              </ContactsParagraph>
+            </ContactsTextWrapper>
           </ContactsWrapper>
         </ContactsSection>
       </Layout>
     )
   }
 }
+
+// Tachyons
 
 // Header Section
 
@@ -97,11 +141,11 @@ const HeaderTextWrapper = styled.main.attrs({
 })``
 
 const HeaderTitle = styled.main.attrs({
-  className: 'f2 white helvetica',
+  className: 'f2 white b helvetica',
 })``
 
 const HeaderDescription = styled.main.attrs({
-  className: 'mt2 f4 white lh-copy helvetica',
+  className: 'mt3 f4 white lh-copy helvetica',
 })``
 
 // Benefits Section
@@ -111,15 +155,27 @@ const BenefitsSection = styled.main.attrs({
 })``
 
 const BenefitsWrapper = styled.main.attrs({
-  className: 'flex justify-center items-center ph2 pv6',
+  className: 'flex items-end ph2 pv6',
 })``
 
 const BenefitsRow = styled.main.attrs({
   className: 'flex-column ph5',
 })``
 
-const BenefitBox = styled.main.attrs({
+const BenefitsBox = styled.main.attrs({
   className: 'pa4 pv5',
+})``
+
+const BenefitsTitle = styled.main.attrs({
+  className: 'f2 mt5 tc b helvetica',
+})``
+
+const BenefitsParagraph = styled.main.attrs({
+  className: 'f5 mt3 mw6 tc lh-copy helvetica',
+})``
+
+const BenefitsSvg = styled.main.attrs({
+  className: 'w-40 center',
 })``
 
 // Open Source Section
@@ -129,7 +185,28 @@ const OSSSection = styled.main.attrs({
 })``
 
 const OSSWrapper = styled.main.attrs({
-  className: 'dt bg-washed-red w-100 ph6 pv6',
+  className:
+    'flex-column justify-center items-center bg-near-white w-100 ph6 pv6',
+})``
+
+const OSSTextWrapper = styled.main.attrs({
+  className: 'flex-column justify-center',
+})``
+
+const OSSTitle = styled.main.attrs({
+  className: 'mt4 f2 tc b helvetica',
+})``
+
+const OSSParagraph = styled.main.attrs({
+  className: 'f5 mt3 tc lh-copy helvetica',
+})``
+
+const OSSButton = styled.main.attrs({
+  className: 'f6 mt4 dib white bg-animate hover-bg-black hover-white no-underline pv2 ph4 br-pill ba b--purple bg-purple helvetica',
+})``
+
+const OSSSvg = styled.main.attrs({
+  className: 'w-20 center',
 })``
 
 // Contacts Section
@@ -139,20 +216,28 @@ const ContactsSection = styled.main.attrs({
 })``
 
 const ContactsWrapper = styled.main.attrs({
-  className: 'dt w-100 ph6 pv6',
+  className: 'flex justify-center items-center ph2 pv6',
+})``
+
+const ContactsTextWrapper = styled.main.attrs({
+  className: 'dtc self-center pl6 mw7',
+})``
+
+const ContactsTitle = styled.main.attrs({
+  className: 'f2 tl b helvetica',
+})``
+
+const ContactsParagraph = styled.main.attrs({
+  className: 'f5 mt3 tl lh-copy helvetica',
+})``
+
+const ContactsSvg = styled.main.attrs({
+  className: 'w-10',
 })``
 
 // Shared Elements
 
-const Title = styled.main.attrs({
-  className: 'f2 mt5 tc helvetica',
-})``
-
-const Paragraph = styled.main.attrs({
-  className: 'mt2 f5 tc lh-copy helvetica',
-})``
-
-const Button = styled.h2.attrs({
+const Button = styled.main.attrs({
   className:
     'f6 mt4 dib white bg-animate hover-bg-white hover-purple no-underline pv2 ph4 br-pill ba b--white-20 helvetica',
 })``
