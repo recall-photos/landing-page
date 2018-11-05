@@ -35,9 +35,9 @@ class IndexPage extends React.Component {
               </HeaderDescription>
               <Button>Sign in with</Button>
             </HeaderTextWrapper>
-            <PhotosWrapper>
-              <Photos data={this.props.data.allFile} />
-            </PhotosWrapper>
+              <PhotosWrapper>
+                <Photos data={this.props.data.allFile} />
+              </PhotosWrapper>
           </HeaderWrapper>
         </HeaderSection>
         <BenefitsSection>
@@ -143,23 +143,23 @@ const HeaderSection = styled.main.attrs({
 })``
 
 const HeaderWrapper = styled.main.attrs({
-  className: 'flex',
+  className: 'flex pb3 pb0-ns',
 })``
 
 const PhotosWrapper = styled.main.attrs({
-  className: 'dtc w-100 w-50-ns',
+  className: 'dtc w-0 w-70-m w-50-l',
 })``
 
 const HeaderTextWrapper = styled.main.attrs({
-  className: 'dtc self-center w-100 w-50-ns pa5',
+  className: 'dtc self-center w-100 w-70-m w-50-l pa4 pt6 pt6-ns pa5-ns',
 })``
 
 const HeaderTitle = styled.main.attrs({
-  className: 'f2 white b helvetica',
+  className: 'f4 f3-ns mw7 white b helvetica',
 })``
 
 const HeaderDescription = styled.main.attrs({
-  className: 'mt3 f4 white lh-copy helvetica',
+  className: 'f4 f4-ns mt3 mw7 white lh-copy helvetica',
 })``
 
 // Benefits Section
@@ -169,11 +169,11 @@ const BenefitsSection = styled.main.attrs({
 })``
 
 const BenefitsWrapper = styled.main.attrs({
-  className: 'flex items-end ph2 pv6',
+  className: 'flex flex-column flex-row-l items-center-m items-baseline-l justify-center ph2-ns pv4 pv6-ns',
 })``
 
 const BenefitsRow = styled.main.attrs({
-  className: 'flex-column ph5',
+  className: 'flex-column ph5-ns',
 })``
 
 const BenefitsBox = styled.main.attrs({
@@ -200,7 +200,7 @@ const OSSSection = styled.main.attrs({
 
 const OSSWrapper = styled.main.attrs({
   className:
-    'flex-column justify-center items-center bg-near-white w-100 ph6 pv6',
+    'flex-column justify-center items-center bg-near-white w-100 ph4 ph6-ns pv6',
 })``
 
 const OSSTextWrapper = styled.main.attrs({
@@ -231,23 +231,23 @@ const ContactsSection = styled.main.attrs({
 })``
 
 const ContactsWrapper = styled.main.attrs({
-  className: 'flex justify-center items-center ph2 pv6',
+  className: 'flex-ns justify-around-ns items-center ph5-m ph6-l pv6',
 })``
 
 const ContactsTextWrapper = styled.main.attrs({
-  className: 'dtc self-center pl6 mw7',
+  className: 'dtc pl5-m mw6-m mw7-l ph5-l',
 })``
 
 const ContactsTitle = styled.main.attrs({
-  className: 'f2 tl b helvetica',
+  className: 'f2 tc tl-ns b helvetica',
 })``
 
 const ContactsParagraph = styled.main.attrs({
-  className: 'f5 mt3 tl lh-copy helvetica',
+  className: 'f5 mt3 tc tl-ns lh-copy helvetica',
 })``
 
 const ContactsSvg = styled.main.attrs({
-  className: 'w-10',
+  className: 'w-30 w-20-m w-20-l',
 })``
 
 const ContactsForm = styled.main.attrs({
