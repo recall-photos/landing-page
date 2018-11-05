@@ -15,6 +15,7 @@ import Sharing from '../svgs/sharing.svg'
 
 import Layout from '../components/layout'
 import Nav from '../components/nav'
+import Footer from '../components/footer'
 import Photos from '../components/photos'
 
 class IndexPage extends React.Component {
@@ -95,7 +96,8 @@ class IndexPage extends React.Component {
             <OSSTextWrapper>
               <OSSTitle>Open Source</OSSTitle>
               <OSSParagraph>
-                Help us create the best solution to safely store your photos online.
+                Help us create the best solution to safely store your photos
+                online.
               </OSSParagraph>
             </OSSTextWrapper>
             <OSSButton>Contribute to Recall on Github</OSSButton>
@@ -112,9 +114,21 @@ class IndexPage extends React.Component {
                 Get notified about recall news, updates and be the first to get
                 early acess to a safer way to store photos online.
               </ContactsParagraph>
+              <ContactsForm>
+                <form action="" method="POST" accept-charset="UTF-8">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                  />
+                  <ContactsButton type="submit" children="Send">Send</ContactsButton>
+                </form>
+              </ContactsForm>
             </ContactsTextWrapper>
           </ContactsWrapper>
         </ContactsSection>
+        <Footer />
       </Layout>
     )
   }
@@ -202,7 +216,8 @@ const OSSParagraph = styled.main.attrs({
 })``
 
 const OSSButton = styled.main.attrs({
-  className: 'f6 mt4 dib white bg-animate hover-bg-black hover-white no-underline pv2 ph4 br-pill ba b--purple bg-purple helvetica',
+  className:
+    'f6 mt4 dib white bg-animate hover-bg-black hover-white no-underline pv2 ph4 br-pill ba b--purple bg-purple helvetica',
 })``
 
 const OSSSvg = styled.main.attrs({
@@ -233,6 +248,15 @@ const ContactsParagraph = styled.main.attrs({
 
 const ContactsSvg = styled.main.attrs({
   className: 'w-10',
+})``
+
+const ContactsForm = styled.main.attrs({
+  className: '',
+})``
+
+const ContactsButton = styled.main.attrs({
+  className:
+    '',
 })``
 
 // Shared Elements
