@@ -24,17 +24,34 @@ class IndexPage extends React.Component {
           <Nav />
           <HeaderWrapper>
             <HeaderTextWrapper>
-              <HeaderTitle>
-                Recall every day of your life
-              </HeaderTitle>
+              <HeaderTitle>Recall every day of your life</HeaderTitle>
               <HeaderDescription>
-                Safely store and own your photos. Your memories, your data. Sign up to get early access.
+                Safely store and access your photos using{' '}
+                <span class="link underline">Blockstack</span>. Your memories,
+                your data. Sign up to get early access.
               </HeaderDescription>
-              <HeaderButton>Sign in with</HeaderButton>
+              <form name="email" method="POST" accept-charset="UTF-8" netlify>
+                <div>
+                  <input
+                    type="email"
+                    name="email"
+                    class="pa2 pl3 mt4 input-reset white ba bg-transparent w-60 w-50-m w-60-l measure pointer b--white-70 helvetica f6"
+                    placeholder="Your email address"
+                    required
+                  />
+                  <button
+                    class="ph4 pv2 f6 dib purple bg-animate hover-bg-black-70 hover-white no-underline ba b--white-70 bg-white pointer helvetica"
+                    type="submit"
+                    children="Send"
+                  >
+                    Sign up
+                  </button>
+                </div>
+              </form>
             </HeaderTextWrapper>
-              <PhotosWrapper>
-                <Photos data={this.props.data.allFile} />
-              </PhotosWrapper>
+            <PhotosWrapper>
+              <Photos data={this.props.data.allFile} />
+            </PhotosWrapper>
           </HeaderWrapper>
         </HeaderSection>
         <BenefitsSection>
@@ -46,7 +63,8 @@ class IndexPage extends React.Component {
                 </BenefitsSvg>
                 <BenefitsTitle>Ownership</BenefitsTitle>
                 <BenefitsParagraph>
-                  A secure way to safely store your photos online, so you are always in control of your photos.
+                  A simple secure way to safely store your photos online, with
+                  the added twist of you truly owning your photos.
                 </BenefitsParagraph>
               </BenefitsBox>
               <BenefitsBox>
@@ -55,7 +73,8 @@ class IndexPage extends React.Component {
                 </BenefitsSvg>
                 <BenefitsTitle>Easy to Use</BenefitsTitle>
                 <BenefitsParagraph>
-                  Automatically upload your photos to Recall and organize them using the intuitive web and mobile platforms.
+                  Automatically upload your photos to Recall and access them
+                  from anywhere using intuitive web and mobile platforms.
                 </BenefitsParagraph>
               </BenefitsBox>
             </BenefitsRow>
@@ -64,9 +83,10 @@ class IndexPage extends React.Component {
                 <BenefitsSvg>
                   <Server />
                 </BenefitsSvg>
-                <BenefitsTitle>Decentralised</BenefitsTitle>
+                <BenefitsTitle>Your storage</BenefitsTitle>
                 <BenefitsParagraph>
-                  No one but you can access or view your photos. You decide where to store them and they’re always protected by the latest encryption mechanisms.
+                  No one but you can access or view your photos. They are
+                  automatically protected by the latest encryption mechanisms.
                 </BenefitsParagraph>
               </BenefitsBox>
               <BenefitsBox>
@@ -75,7 +95,8 @@ class IndexPage extends React.Component {
                 </BenefitsSvg>
                 <BenefitsTitle>Searchable</BenefitsTitle>
                 <BenefitsParagraph>
-                  We’re constantly looking to refine the tools that allow you to easily recall all your memories and find the ones you're looking for.
+                  We'll sort out your photos so you can easily recall all your
+                  memories and find the ones you're looking for.
                 </BenefitsParagraph>
               </BenefitsBox>
             </BenefitsRow>
@@ -86,9 +107,17 @@ class IndexPage extends React.Component {
             <OSSTextWrapper>
               <OSSTitle>Open Source</OSSTitle>
               <OSSParagraph>
-                We’re constantly looking to refine the tools that allow you to easily recall all your memories and find the ones you're looking for.
+                Join us on a mission to create tools to safely store, organize
+                and view photos online. Help us gain back true onwership of our
+                memories.
               </OSSParagraph>
-              <OSSButton>Contribute to Recall on Github</OSSButton>
+              <OSSParagraph>
+                All our code is open-sourced and avaiable online for
+                anyone to contribute.
+              </OSSParagraph>
+              <a href="https://github.com/recall-photos/recall" target="_blank">
+                <OSSButton>Contribute to Recall on Github</OSSButton>
+              </a>
             </OSSTextWrapper>
             <OSSSvg>
               <Github />
@@ -103,20 +132,26 @@ class IndexPage extends React.Component {
             <ContactsTextWrapper>
               <ContactsTitle>Stay up to date.</ContactsTitle>
               <ContactsParagraph>
-                Get notified about recall news, updates and be the first to get
+                Get notified about Recall news, updates and be the first to get
                 early acess to a safer way to store photos online.
               </ContactsParagraph>
               <ContactsForm>
-                <form action="" method="POST" accept-charset="UTF-8">
+                <form name="email" method="POST" accept-charset="UTF-8" netlify>
                   <div>
                     <input
                       type="email"
                       name="email"
-                      class="pa2 pl3 input-reset ba bg-transparent w-70 w-70-m w-70-l measure pointer helvetica f6"
+                      class="pa2 pl3 input-reset ba bg-transparent w-60 w-50-m w-60-l measure pointer helvetica f6"
                       placeholder="Your email address"
                       required
                     />
-                    <button class="ph4 pv2 f6 dib white bg-animate hover-bg-black-70 hover-white no-underline ba b--purple bg-purple pointer helvetica" type="submit" children="Send">Send</button>
+                    <button
+                      class="ph4 pv2 f6 dib white bg-animate hover-bg-black hover-white no-underline ba b--purple bg-purple pointer helvetica"
+                      type="submit"
+                      children="Send"
+                    >
+                      Send
+                    </button>
                   </div>
                 </form>
               </ContactsForm>
@@ -169,7 +204,8 @@ const BenefitsSection = styled.main.attrs({
 })``
 
 const BenefitsWrapper = styled.main.attrs({
-  className: 'flex flex-column flex-row-l items-center-m items-baseline-l justify-center ph2-ns pv4 pv6-ns',
+  className:
+    'flex flex-column flex-row-l items-center-m items-end-l justify-center ph2-ns pv4 pv6-ns',
 })``
 
 const BenefitsRow = styled.main.attrs({
@@ -177,7 +213,7 @@ const BenefitsRow = styled.main.attrs({
 })``
 
 const BenefitsBox = styled.main.attrs({
-  className: 'pa4 pv5',
+  className: 'pa2 pv5',
 })``
 
 const BenefitsTitle = styled.main.attrs({
@@ -211,16 +247,16 @@ const OSSTitle = styled.main.attrs({
 })``
 
 const OSSParagraph = styled.main.attrs({
-  className: 'f5 mt3 ph4 ph0-ns mw6-ns tc tl-ns white lh-copy helvetica',
+  className: 'f5 mt3 ph4 ph0-ns mw7-ns tc tl-ns white lh-copy helvetica',
 })``
 
 const OSSButton = styled.main.attrs({
   className:
-    'ml5 ml0-ns f6 mt4 dib white bg-animate hover-bg-black-70 hover-white no-underline pv2 ph4 ba b--white-20 pointer helvetica',
+    'ml5 ml0-ns f6 mt4 dib purple bg-animate hover-bg-black-70 hover-white no-underline pv2 ph4 ba b--white-20 bg-white pointer helvetica',
 })``
 
 const OSSSvg = styled.main.attrs({
-  className: 'dn db-ns ml4-m ml6-l w-30 w-50-m w-25-l',
+  className: 'dn db-ns ml4-m ml6-l mr2-l w-30 w-50-m w-30-l',
 })``
 
 // Contacts Section
@@ -246,7 +282,7 @@ const ContactsParagraph = styled.main.attrs({
 })``
 
 const ContactsSvg = styled.main.attrs({
-  className: 'dn db-ns mr4-m mr6-l w-30 w-50-m w-25-l',
+  className: 'dn db-ns mr4-m mr7-l ml2-l w-30 w-30-m w-20-l',
 })``
 
 const ContactsForm = styled.main.attrs({
