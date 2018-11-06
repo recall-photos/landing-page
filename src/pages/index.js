@@ -29,7 +29,7 @@ class IndexPage extends React.Component {
               <HeaderTitle>Recall every day of your life</HeaderTitle>
               <HeaderDescription>
                 Safely store and access your photos using{' '}
-                <span class="link underline">Blockstack</span>. Your memories,
+                <a class="white dim courser underline" href="https://blockstack.org" target="_blank">Blockstack</a>. Your memories,
                 your data. Sign up to get early access.
               </HeaderDescription>
               <form name="email" method="POST" accept-charset="UTF-8" netlify>
