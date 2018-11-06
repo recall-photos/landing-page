@@ -33,7 +33,7 @@ class IndexPage extends React.Component {
                 An alternative way to safely store your photos online, so you
                 are always in control. Sign up to get early access.
               </HeaderDescription>
-              <Button>Sign in with</Button>
+              <HeaderButton>Sign in with</HeaderButton>
             </HeaderTextWrapper>
               <PhotosWrapper>
                 <Photos data={this.props.data.allFile} />
@@ -116,13 +116,16 @@ class IndexPage extends React.Component {
               </ContactsParagraph>
               <ContactsForm>
                 <form action="" method="POST" accept-charset="UTF-8">
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Your name"
-                    required
-                  />
-                  <ContactsButton type="submit" children="Send">Send</ContactsButton>
+                  <div>
+                    <input
+                      type="email"
+                      name="email"
+                      class="pa2 input-reset ba bg-transparent w-100 measure helvetica f6"
+                      placeholder="Your email address"
+                      required
+                    />
+                    <button class="ph4 pv2 f6 dib white bg-animate hover-bg-black-70 hover-white no-underline ba b--purple bg-purple helvetica" type="submit" children="Send">Send</button>
+                  </div>
                 </form>
               </ContactsForm>
             </ContactsTextWrapper>
@@ -160,6 +163,11 @@ const HeaderTitle = styled.main.attrs({
 
 const HeaderDescription = styled.main.attrs({
   className: 'f4 f4-ns mt3 mw7 white lh-copy helvetica',
+})``
+
+const HeaderButton = styled.main.attrs({
+  className:
+    'f6 mt4 dib white bg-animate hover-bg-black-70 hover-white no-underline pv2 ph4 ba b--white-20 helvetica',
 })``
 
 // Benefits Section
@@ -217,7 +225,7 @@ const OSSParagraph = styled.main.attrs({
 
 const OSSButton = styled.main.attrs({
   className:
-    'f6 mt4 dib white bg-animate hover-bg-black hover-white no-underline pv2 ph4 br-pill ba b--purple bg-purple helvetica',
+    'f6 mt4 dib white bg-animate hover-bg-black-70 hover-white no-underline pv2 ph4 ba b--purple bg-purple helvetica',
 })``
 
 const OSSSvg = styled.main.attrs({
@@ -251,19 +259,7 @@ const ContactsSvg = styled.main.attrs({
 })``
 
 const ContactsForm = styled.main.attrs({
-  className: '',
-})``
-
-const ContactsButton = styled.main.attrs({
-  className:
-    '',
-})``
-
-// Shared Elements
-
-const Button = styled.main.attrs({
-  className:
-    'f6 mt4 dib white bg-animate hover-bg-white hover-purple no-underline pv2 ph4 br-pill ba b--white-20 helvetica',
+  className: 'mt4',
 })``
 
 export default IndexPage
