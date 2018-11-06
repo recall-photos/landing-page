@@ -90,17 +90,17 @@ class IndexPage extends React.Component {
         </BenefitsSection>
         <OSSSection>
           <OSSWrapper>
-            <OSSSvg>
-              <Github />
-            </OSSSvg>
             <OSSTextWrapper>
               <OSSTitle>Open Source</OSSTitle>
               <OSSParagraph>
                 Help us create the best solution to safely store your photos
                 online.
               </OSSParagraph>
+              <OSSButton>Contribute to Recall on Github</OSSButton>
             </OSSTextWrapper>
-            <OSSButton>Contribute to Recall on Github</OSSButton>
+            <OSSSvg>
+              <Github />
+            </OSSSvg>
           </OSSWrapper>
         </OSSSection>
         <ContactsSection>
@@ -120,11 +120,11 @@ class IndexPage extends React.Component {
                     <input
                       type="email"
                       name="email"
-                      class="pa2 input-reset ba bg-transparent w-100 measure helvetica f6"
+                      class="pa2 pl3 input-reset ba bg-transparent w-70 w-70-m w-70-l measure pointer helvetica f6"
                       placeholder="Your email address"
                       required
                     />
-                    <button class="ph4 pv2 f6 dib white bg-animate hover-bg-black-70 hover-white no-underline ba b--purple bg-purple helvetica" type="submit" children="Send">Send</button>
+                    <button class="ph4 pv2 f6 dib white bg-animate hover-bg-black-70 hover-white no-underline ba b--purple bg-purple pointer helvetica" type="submit" children="Send">Send</button>
                   </div>
                 </form>
               </ContactsForm>
@@ -142,7 +142,7 @@ class IndexPage extends React.Component {
 // Header Section
 
 const HeaderSection = styled.main.attrs({
-  className: 'dt bg-purple w-100',
+  className: 'dt bg-purple w-100 pv3 pv0-ns',
 })``
 
 const HeaderWrapper = styled.main.attrs({
@@ -154,7 +154,7 @@ const PhotosWrapper = styled.main.attrs({
 })``
 
 const HeaderTextWrapper = styled.main.attrs({
-  className: 'dtc self-center w-100 w-70-m w-50-l pa4 pt6 pt6-ns pa5-ns',
+  className: 'dtc self-center w-100 w-70-m w-50-l pt6 pa4 pa5-ns',
 })``
 
 const HeaderTitle = styled.main.attrs({
@@ -162,12 +162,12 @@ const HeaderTitle = styled.main.attrs({
 })``
 
 const HeaderDescription = styled.main.attrs({
-  className: 'f4 f4-ns mt3 mw7 white lh-copy helvetica',
+  className: 'f5 f4-ns mt3 mw7 white lh-copy helvetica',
 })``
 
 const HeaderButton = styled.main.attrs({
   className:
-    'f6 mt4 dib white bg-animate hover-bg-black-70 hover-white no-underline pv2 ph4 ba b--white-20 helvetica',
+    'f6 mt4 dib white bg-animate hover-bg-black-70 hover-white no-underline pv2 ph4 ba b--white-20 pointer helvetica',
 })``
 
 // Benefits Section
@@ -203,33 +203,32 @@ const BenefitsSvg = styled.main.attrs({
 // Open Source Section
 
 const OSSSection = styled.main.attrs({
-  className: 'dt w-100',
+  className: 'dt w-100 bg-purple',
 })``
 
 const OSSWrapper = styled.main.attrs({
-  className:
-    'flex-column justify-center items-center bg-near-white w-100 ph4 ph6-ns pv6',
+  className: 'flex-ns justify-around-ns items-center pv6 ph6-ns',
 })``
 
 const OSSTextWrapper = styled.main.attrs({
-  className: 'flex-column justify-center',
+  className: 'dtc pr5-m pr6-l',
 })``
 
 const OSSTitle = styled.main.attrs({
-  className: 'mt4 f2 tc b helvetica',
+  className: 'f2 tc tl-ns b white helvetica',
 })``
 
 const OSSParagraph = styled.main.attrs({
-  className: 'f5 mt3 tc lh-copy helvetica',
+  className: 'f5 mt3 ph4 ph0-ns tc tl-ns white lh-copy helvetica',
 })``
 
 const OSSButton = styled.main.attrs({
   className:
-    'f6 mt4 dib white bg-animate hover-bg-black-70 hover-white no-underline pv2 ph4 ba b--purple bg-purple helvetica',
+    'ml5 ml0-ns f6 mt4 dib white bg-animate hover-bg-black-70 hover-white no-underline pv2 ph4 ba b--white-20 pointer helvetica',
 })``
 
 const OSSSvg = styled.main.attrs({
-  className: 'w-20 center',
+  className: 'dn db-ns w-30 w-50-m w-25-l',
 })``
 
 // Contacts Section
@@ -239,7 +238,7 @@ const ContactsSection = styled.main.attrs({
 })``
 
 const ContactsWrapper = styled.main.attrs({
-  className: 'flex-ns justify-around-ns items-center ph5-m ph6-l pv6',
+  className: 'flex-ns justify-center-ns items-center ph5-m ph6-l pv6',
 })``
 
 const ContactsTextWrapper = styled.main.attrs({
@@ -251,15 +250,15 @@ const ContactsTitle = styled.main.attrs({
 })``
 
 const ContactsParagraph = styled.main.attrs({
-  className: 'f5 mt3 tc tl-ns lh-copy helvetica',
+  className: 'f5 mt3 ph4 ph0-ns tc tl-ns lh-copy helvetica',
 })``
 
 const ContactsSvg = styled.main.attrs({
-  className: 'w-30 w-20-m w-20-l',
+  className: 'dn db-ns ml5-l w-30 w-20-m w-25-l',
 })``
 
 const ContactsForm = styled.main.attrs({
-  className: 'mt4',
+  className: 'mt4 ph3 ph0-ns tc tl-ns',
 })``
 
 export default IndexPage

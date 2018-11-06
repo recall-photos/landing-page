@@ -17,10 +17,10 @@ export function Nav({ siteTitle }) {
       </LeftContainer>
       <RightContainer>
         <Link to="/about">
-          <Url>About</Url>
+          <Url></Url>
         </Link>
         <Link to="/#0">
-          <Button>Sign In</Button>
+          <Button></Button>
         </Link>
       </RightContainer>
     </NavMenu>
@@ -44,7 +44,7 @@ const Url = styled.h2.attrs({
 })``
 const Button = styled.h2.attrs({
   className:
-    'f6 dib white bg-animate hover-bg-purple hover-white no-underline pv2 ph4 br-pill ba b--white-20 helvetica',
+    'f6 dib white bg-animate hover-bg-purple hover-white no-underline pv2 ph4 helvetica',
 })``
 
 export default Nav
