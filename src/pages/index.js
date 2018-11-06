@@ -1,12 +1,10 @@
 import React from 'react'
-import { graphql, withPrefix } from 'gatsby'
-import Sticky from 'react-stickynode'
+import { graphql } from 'gatsby'
 
 import 'tachyons/css/tachyons.min.css'
 import styled from 'styled-components'
 
 import Collection from '../svgs/collection.svg'
-import Collaboration from '../svgs/collaboration.svg'
 import Github from '../svgs/github.svg'
 import Newsletter from '../svgs/newsletter.svg'
 import Security from '../svgs/security.svg'
@@ -27,11 +25,10 @@ class IndexPage extends React.Component {
           <HeaderWrapper>
             <HeaderTextWrapper>
               <HeaderTitle>
-                No more doubts about who owns the photos.
+                Recall every day of your life
               </HeaderTitle>
               <HeaderDescription>
-                An alternative way to safely store your photos online, so you
-                are always in control. Sign up to get early access.
+                Safely store and own your photos. Your memories, your data. Sign up to get early access.
               </HeaderDescription>
               <HeaderButton>Sign in with</HeaderButton>
             </HeaderTextWrapper>
@@ -49,8 +46,7 @@ class IndexPage extends React.Component {
                 </BenefitsSvg>
                 <BenefitsTitle>Ownership</BenefitsTitle>
                 <BenefitsParagraph>
-                  An alternative way to safely store your photos online, so you
-                  are always in control. Sign up to get early access.
+                  A secure way to safely store your photos online, so you are always in control of your photos.
                 </BenefitsParagraph>
               </BenefitsBox>
               <BenefitsBox>
@@ -59,8 +55,7 @@ class IndexPage extends React.Component {
                 </BenefitsSvg>
                 <BenefitsTitle>Easy to Use</BenefitsTitle>
                 <BenefitsParagraph>
-                  An alternative way to safely store your photos online, so you
-                  are always in control. Sign up to get early access.
+                  Automatically upload your photos to Recall and organize them using the intuitive web and mobile platforms.
                 </BenefitsParagraph>
               </BenefitsBox>
             </BenefitsRow>
@@ -69,10 +64,9 @@ class IndexPage extends React.Component {
                 <BenefitsSvg>
                   <Server />
                 </BenefitsSvg>
-                <BenefitsTitle>Descentralised</BenefitsTitle>
+                <BenefitsTitle>Decentralised</BenefitsTitle>
                 <BenefitsParagraph>
-                  An alternative way to safely store your photos online, so you
-                  are always in control. Sign up to get early access.
+                  No one but you can access or view your photos. You decide where to store them and they’re always protected by the latest encryption mechanisms.
                 </BenefitsParagraph>
               </BenefitsBox>
               <BenefitsBox>
@@ -81,8 +75,7 @@ class IndexPage extends React.Component {
                 </BenefitsSvg>
                 <BenefitsTitle>Searchable</BenefitsTitle>
                 <BenefitsParagraph>
-                  An alternative way to safely store your photos online, so you
-                  are always in control. Sign up to get early access.
+                  We’re constantly looking to refine the tools that allow you to easily recall all your memories and find the ones you're looking for.
                 </BenefitsParagraph>
               </BenefitsBox>
             </BenefitsRow>
@@ -93,8 +86,7 @@ class IndexPage extends React.Component {
             <OSSTextWrapper>
               <OSSTitle>Open Source</OSSTitle>
               <OSSParagraph>
-                Help us create the best solution to safely store your photos
-                online.
+                We’re constantly looking to refine the tools that allow you to easily recall all your memories and find the ones you're looking for.
               </OSSParagraph>
               <OSSButton>Contribute to Recall on Github</OSSButton>
             </OSSTextWrapper>
@@ -207,7 +199,7 @@ const OSSSection = styled.main.attrs({
 })``
 
 const OSSWrapper = styled.main.attrs({
-  className: 'flex-ns justify-around-ns items-center pv6 ph6-ns',
+  className: 'flex-ns justify-around-ns items-center pv6 ph5-m ph6-l',
 })``
 
 const OSSTextWrapper = styled.main.attrs({
@@ -219,7 +211,7 @@ const OSSTitle = styled.main.attrs({
 })``
 
 const OSSParagraph = styled.main.attrs({
-  className: 'f5 mt3 ph4 ph0-ns tc tl-ns white lh-copy helvetica',
+  className: 'f5 mt3 ph4 ph0-ns mw6-ns tc tl-ns white lh-copy helvetica',
 })``
 
 const OSSButton = styled.main.attrs({
@@ -228,7 +220,7 @@ const OSSButton = styled.main.attrs({
 })``
 
 const OSSSvg = styled.main.attrs({
-  className: 'dn db-ns w-30 w-50-m w-25-l',
+  className: 'dn db-ns ml4-m ml6-l w-30 w-50-m w-25-l',
 })``
 
 // Contacts Section
@@ -238,23 +230,23 @@ const ContactsSection = styled.main.attrs({
 })``
 
 const ContactsWrapper = styled.main.attrs({
-  className: 'flex-ns justify-center-ns items-center ph5-m ph6-l pv6',
+  className: 'flex-ns justify-around-ns items-center pv6 ph5-m ph6-l',
 })``
 
 const ContactsTextWrapper = styled.main.attrs({
-  className: 'dtc pl5-m mw6-m mw7-l ph5-l',
+  className: 'dtc',
 })``
 
 const ContactsTitle = styled.main.attrs({
-  className: 'f2 tc tl-ns b helvetica',
+  className: 'f2 tc tl-ns b black helvetica',
 })``
 
 const ContactsParagraph = styled.main.attrs({
-  className: 'f5 mt3 ph4 ph0-ns tc tl-ns lh-copy helvetica',
+  className: 'f5 mt3 ph4 ph0-ns mw6-ns tc tl-ns black lh-copy helvetica',
 })``
 
 const ContactsSvg = styled.main.attrs({
-  className: 'dn db-ns ml5-l w-30 w-20-m w-25-l',
+  className: 'dn db-ns mr4-m mr6-l w-30 w-50-m w-25-l',
 })``
 
 const ContactsForm = styled.main.attrs({
