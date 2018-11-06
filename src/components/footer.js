@@ -5,17 +5,13 @@ import styled from 'styled-components'
 
 const Footer = () => (
   <Main>
-    <a href="#" class="f6 link dim gray dib mr3 mr4-ns">Roadmap</a>
-    <a href="#" class="f6 link dim gray dib mr3 mr4-ns">Talk to us</a>
+    <a href="#" class="f7 link dim gray dib mr3 mr4-ns helvetica">Roadmap</a>
+    <a href="#" class="f7 link dim gray dib mr3 mr4-ns helvetica">Talk to us</a>
   </Main>
 )
 
 const Main = styled.main.attrs({
-  className: 'dt w-100',
-})``
-
-const Link = styled.main.attrs({
-  className: 'dt w-100',
+  className: 'flex justify-center dt w-100 pb3',
 })``
 
 export default Footer;
