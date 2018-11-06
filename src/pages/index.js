@@ -6,10 +6,12 @@ import styled from 'styled-components'
 
 import Collection from '../svgs/collection.svg'
 import Github from '../svgs/github.svg'
+import GithubRound from '../svgs/github-round.svg'
 import Newsletter from '../svgs/newsletter.svg'
 import Security from '../svgs/security.svg'
 import Server from '../svgs/server.svg'
 import Sharing from '../svgs/sharing.svg'
+import TwitterRound from '../svgs/twitter-round.svg'
 
 import Layout from '../components/layout'
 import Nav from '../components/nav'
@@ -155,6 +157,14 @@ class IndexPage extends React.Component {
                   </div>
                 </form>
               </ContactsForm>
+              <ContactsIcons>
+              <a href="https://github.com/recall-photos" target="_blank">
+                <TwitterRound class="mr3 dim pointer" />
+              </a>
+              <a href="https://twitter.com/recallphotos" target="_blank">
+                <GithubRound class="dim pointer" />
+              </a>
+              </ContactsIcons>
             </ContactsTextWrapper>
           </ContactsWrapper>
         </ContactsSection>
@@ -287,6 +297,10 @@ const ContactsSvg = styled.main.attrs({
 
 const ContactsForm = styled.main.attrs({
   className: 'mt4 ph3 ph0-ns tc tl-ns',
+})``
+
+const ContactsIcons = styled.main.attrs({
+  className: 'mt4 tc tl-ns',
 })``
 
 export default IndexPage
