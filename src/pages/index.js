@@ -15,6 +15,7 @@ import TwitterRound from '../svgs/twitter-round.svg'
 
 import Layout from '../components/layout'
 import Nav from '../components/nav'
+import Form from '../components/form'
 import Footer from '../components/footer'
 import Photos from '../components/photos'
 
@@ -32,24 +33,7 @@ class IndexPage extends React.Component {
                 <a class="white dim courser underline" href="https://blockstack.org" target="_blank">Blockstack</a>. Your memories,
                 your data. Sign up to get early access.
               </HeaderDescription>
-              <form name="email" method="POST" accept-charset="UTF-8" netlify>
-                <div>
-                  <input
-                    type="email"
-                    name="email"
-                    class="pa2 pl3 mt4 input-reset white ba bg-transparent w-60 w-50-m w-60-l measure pointer b--white-70 helvetica f6"
-                    placeholder="Your email address"
-                    required
-                  />
-                  <button
-                    class="ph4 pv2 f6 dib purple bg-animate hover-bg-black-70 hover-white no-underline ba b--white-70 bg-white pointer helvetica"
-                    type="submit"
-                    children="Send"
-                  >
-                    Sign up
-                  </button>
-                </div>
-              </form>
+              <Form />
             </HeaderTextWrapper>
             <PhotosWrapper>
               <Photos data={this.props.data.allFile} />
@@ -134,29 +118,9 @@ class IndexPage extends React.Component {
             <ContactsTextWrapper>
               <ContactsTitle>Stay up to date.</ContactsTitle>
               <ContactsParagraph>
-                Get notified about Recall news, updates and be the first to get
-                early acess to a safer way to store photos online.
+                Follow us for news, updates and to be the first to know when you
+                can start safetly storing your photos online with Recall.
               </ContactsParagraph>
-              <ContactsForm>
-                <form name="email" method="POST" accept-charset="UTF-8" netlify>
-                  <div>
-                    <input
-                      type="email"
-                      name="email"
-                      class="pa2 pl3 input-reset ba bg-transparent w-60 w-50-m w-60-l measure pointer helvetica f6"
-                      placeholder="Your email address"
-                      required
-                    />
-                    <button
-                      class="ph4 pv2 f6 dib white bg-animate hover-bg-black hover-white no-underline ba b--purple bg-purple pointer helvetica"
-                      type="submit"
-                      children="Send"
-                    >
-                      Send
-                    </button>
-                  </div>
-                </form>
-              </ContactsForm>
               <ContactsIcons>
               <a href="https://github.com/recall-photos" target="_blank">
                 <TwitterRound class="mr3 dim pointer" />
@@ -293,10 +257,6 @@ const ContactsParagraph = styled.main.attrs({
 
 const ContactsSvg = styled.main.attrs({
   className: 'dn db-ns mr4-m mr7-l ml2-l w-30 w-30-m w-20-l',
-})``
-
-const ContactsForm = styled.main.attrs({
-  className: 'mt4 ph3 ph0-ns tc tl-ns',
 })``
 
 const ContactsIcons = styled.main.attrs({
