@@ -117,7 +117,7 @@ class IndexPage extends React.Component {
                 All our code is open-sourced and avaiable online for
                 anyone to contribute.
               </OSSParagraph>
-              <a href="https://github.com/recall-photos/recall" target="_blank">
+              <a href="https://github.com/recall-photos/recall-app" target="_blank">
                 <OSSButton>Contribute to Recall on Github</OSSButton>
               </a>
             </OSSTextWrapper>
@@ -161,7 +161,7 @@ class IndexPage extends React.Component {
               <a href="https://github.com/recall-photos" target="_blank">
                 <TwitterRound class="mr3 dim pointer" />
               </a>
-              <a href="https://twitter.com/recallphotos" target="_blank">
+              <a href="https://github.com/recall-photos/recall-app" target="_blank">
                 <GithubRound class="dim pointer" />
               </a>
               </ContactsIcons>
