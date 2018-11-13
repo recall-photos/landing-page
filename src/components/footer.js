@@ -5,8 +5,8 @@ import styled from 'styled-components'
 
 const Footer = () => (
   <Main>
-    <a href="https://trello.com/b/EMKJ0T7f/recall-roadmap" target="_blank" class="f7 link dim gray dib mr3 mr4-ns helvetica">Roadmap</a>
-    <a href="https://twitter.com/recallphotos" class="f7 link dim gray dib mr3 mr4-ns helvetica">Talk to us</a>
+    <a href="https://trello.com/b/EMKJ0T7f/recall-roadmap" target="_blank" rel="noopener noreferrer" class="f7 link dim gray dib mr3 mr4-ns helvetica">Roadmap</a>
+    <a href="https://twitter.com/recallphotos" target="_blank" rel="noopener noreferrer" class="f7 link dim gray dib mr3 mr4-ns helvetica">Talk to us</a>
   </Main>
 )
 

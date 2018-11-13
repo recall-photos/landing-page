@@ -30,7 +30,7 @@ class IndexPage extends React.Component {
               <HeaderTitle>Recall every day of your life</HeaderTitle>
               <HeaderDescription>
                 Safely store and access your photos using{' '}
-                <a class="white dim courser underline" href="https://blockstack.org" target="_blank">Blockstack</a>. Your memories,
+                <a class="white dim courser underline" href="https://blockstack.org" target="_blank" rel="noopener noreferrer">Blockstack</a>. Your memories,
                 your data. Sign up to get early access.
               </HeaderDescription>
               <Form />
@@ -101,7 +101,7 @@ class IndexPage extends React.Component {
                 All our code is open-sourced and avaiable online for
                 anyone to contribute.
               </OSSParagraph>
-              <a href="https://github.com/recall-photos/recall-app" target="_blank">
+              <a href="https://github.com/recall-photos/recall-app" target="_blank" rel="noopener noreferrer">
                 <OSSButton>Contribute to Recall on Github</OSSButton>
               </a>
             </OSSTextWrapper>
@@ -122,10 +122,10 @@ class IndexPage extends React.Component {
                 can start safetly storing your photos online with Recall.
               </ContactsParagraph>
               <ContactsIcons>
-              <a href="https://github.com/recall-photos" target="_blank">
+              <a href="https://github.com/recall-photos" target="_blank" rel="noopener noreferrer">
                 <TwitterRound class="mr3 dim pointer" />
               </a>
-              <a href="https://github.com/recall-photos/recall-app" target="_blank">
+              <a href="https://github.com/recall-photos/recall-app" target="_blank" rel="noopener noreferrer">
                 <GithubRound class="dim pointer" />
               </a>
               </ContactsIcons>
@@ -166,10 +166,10 @@ const HeaderDescription = styled.main.attrs({
   className: 'f5 f4-ns mt3 mw7 white lh-copy helvetica',
 })``
 
-const HeaderButton = styled.main.attrs({
-  className:
-    'f6 mt4 dib white bg-animate hover-bg-black-70 hover-white no-underline pv2 ph4 ba b--white-20 pointer helvetica',
-})``
+// const HeaderButton = styled.main.attrs({
+//   className:
+//     'f6 mt4 dib white bg-animate hover-bg-black-70 hover-white no-underline pv2 ph4 ba b--white-20 pointer helvetica',
+// })``
 
 // Benefits Section
 

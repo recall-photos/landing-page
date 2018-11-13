@@ -3,6 +3,22 @@ module.exports = {
     title: 'Recall',
   },
   plugins: [
+    {
+    resolve: `gatsby-plugin-google-analytics`,
+    options: {
+      trackingId: "UA-128387699-1",
+      // Puts tracking script in the head instead of the body
+      head: false,
+      // Setting this parameter is optional
+      anonymize: true,
+      // Setting this parameter is also optional
+      respectDNT: true,
+      // Any additional create only fields (optional)
+      sampleRate: 5,
+      siteSpeedSampleRate: 10,
+      cookieDomain: "recall.photos",
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
