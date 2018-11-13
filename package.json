@@ -13,10 +13,10 @@
     "gatsby-plugin-sharp": "^2.0.7",
     "gatsby-source-filesystem": "^2.0.4",
     "gatsby-transformer-sharp": "^2.1.4",
+    "hidden-styled": "^1.0.0-0",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
-    "react-hide-at": "^1.0.4",
     "react-stickynode": "^2.1.0",
     "styled-components": "^4.0.2",
     "tachyons": "4.10.0"

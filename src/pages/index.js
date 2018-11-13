@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 
 import 'tachyons/css/tachyons.min.css'
 import styled from 'styled-components'
+import Hide from 'hidden-styled'
 
 import Collection from '../svgs/collection.svg'
 import Github from '../svgs/github.svg'
@@ -30,8 +31,7 @@ class IndexPage extends React.Component {
               <HeaderTitle>Recall every day of your life</HeaderTitle>
               <HeaderDescription>
                 Safely store and access your photos using{' '}
-                <a class="white dim courser underline" href="https://blockstack.org" target="_blank" rel="noopener noreferrer">Blockstack</a>. Your memories,
-                your data. Sign up to get early access.
+                <a class="white dim courser underline" href="https://blockstack.org" target="_blank" rel="noopener noreferrer">Blockstack</a>. Your memories, your data.<Hide lg><br /></Hide> Sign up to get early access.
               </HeaderDescription>
               <Form />
             </HeaderTextWrapper>
@@ -159,11 +159,11 @@ const HeaderTextWrapper = styled.main.attrs({
 })``
 
 const HeaderTitle = styled.main.attrs({
-  className: 'f4 f3-ns mw7 white b helvetica',
+  className: 'mb4 f4 f4-m f3-l mw7 white b helvetica',
 })``
 
 const HeaderDescription = styled.main.attrs({
-  className: 'f5 f4-ns mt3 mw7 white lh-copy helvetica',
+  className: 'f6 f6-m f4-l mt3 mw7 mw6-l white lh-copy helvetica',
 })``
 
 // const HeaderButton = styled.main.attrs({
