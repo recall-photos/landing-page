@@ -33,7 +33,11 @@ class IndexPage extends React.Component {
                 Safely store and access your photos using{' '}
                 <a class="white dim courser underline" href="https://blockstack.org" target="_blank" rel="noopener noreferrer">Blockstack</a>. Your memories, your data.<Hide lg><br /></Hide> Sign up to get early access.
               </HeaderDescription>
-              <Form />
+              <a href="https://app.recall.photos" target="_blank" rel="noopener noreferrer">
+                <HeaderButton>
+                  Start using the beta today!
+                </HeaderButton>
+              </a>
             </HeaderTextWrapper>
             <PhotosWrapper>
               <Photos data={this.props.data.allFile} />
@@ -121,6 +125,7 @@ class IndexPage extends React.Component {
                 Follow us for news, updates and to be the first to know when you
                 can start safetly storing your photos online with Recall.
               </ContactsParagraph>
+              <Form />
               <ContactsIcons>
               <a href="https://github.com/recall-photos" target="_blank" rel="noopener noreferrer">
                 <TwitterRound class="mr3 dim pointer" />
@@ -166,10 +171,10 @@ const HeaderDescription = styled.main.attrs({
   className: 'f6 f6-m f4-l mt3 mw7 mw6-l white lh-copy helvetica',
 })``
 
-// const HeaderButton = styled.main.attrs({
-//   className:
-//     'f6 mt4 dib white bg-animate hover-bg-black-70 hover-white no-underline pv2 ph4 ba b--white-20 pointer helvetica',
-// })``
+const HeaderButton = styled.main.attrs({
+  className:
+    'f5 b mt4 dib white bg-animate hover-bg-white hover-dark-pink no-underline pv2 ph4 ba b--white-20 bg-dark-pink pointer helvetica',
+})``
 
 // Benefits Section
 
@@ -226,7 +231,7 @@ const OSSParagraph = styled.main.attrs({
 
 const OSSButton = styled.main.attrs({
   className:
-    'ml5 ml0-ns f6 mt4 dib purple bg-animate hover-bg-black-70 hover-white no-underline pv2 ph4 ba b--white-20 bg-white pointer helvetica',
+    'ml5 ml0-ns f6 b mt4 dib white bg-animate hover-bg-white hover-dark-pink no-underline pv2 ph4 ba b--white-20 bg-dark-pink pointer helvetica',
 })``
 
 const OSSSvg = styled.main.attrs({

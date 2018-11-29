@@ -28,12 +28,12 @@ class Form extends React.Component {
           <input
             type="email"
             name="email"
-            class="pa2 pl3 mt4 input-reset white ba bg-transparent w-60 w-50-m w-60-l measure b--white-70 helvetica f6"
+            class="pa2 pl3 mt4 input-reset white ba bg-transparent w-60 w-50-m w-60-l measure b--black-70 helvetica f6"
             placeholder="Your email address"
             required
           />
           <button
-            class="ph4 pv2 f6 dib purple bg-animate hover-bg-black-70 hover-white no-underline ba b--white-70 bg-white pointer helvetica"
+            class="f6 b mt4 dib white bg-animate hover-bg-white hover-black no-underline pv2 ph4 ba b--black-20 bg-dark-pink pointer helvetica"
             type="submit"
             name="submit"
           >
