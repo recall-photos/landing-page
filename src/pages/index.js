@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import 'tachyons/css/tachyons.min.css'
 import styled from 'styled-components'
@@ -33,11 +34,11 @@ class IndexPage extends React.Component {
                 Safely store and access your photos using{' '}
                 <a class="white dim courser underline" href="https://blockstack.org" target="_blank" rel="noopener noreferrer">Blockstack</a>. Your memories, your data.<Hide lg><br /></Hide> Sign up to get early access.
               </HeaderDescription>
-              <a href="https://app.recall.photos" target="_blank" rel="noopener noreferrer">
+              <OutboundLink href="https://app.recall.photos" target="_blank" rel="noopener noreferrer">
                 <HeaderButton>
                   Start using the beta today!
                 </HeaderButton>
-              </a>
+              </OutboundLink>
             </HeaderTextWrapper>
             <PhotosWrapper>
               <Photos data={this.props.data.allFile} />
