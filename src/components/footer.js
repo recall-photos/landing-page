@@ -13,7 +13,7 @@ const Footer = () => (
         <p class="f7 gray dib mr2 helvetica">Started by</p>
         <a href="https://twitter.com/alvesjtiago" target="_blank" rel="noopener noreferrer" class="f7 link dim underline gray dib mr2 helvetica">Tiago Alves</a>
         <p class="f7 gray dib mr2 helvetica">&</p>
-        <a href="https://twitter.com/recallphotos" target="_blank" rel="noopener noreferrer" class="f7 link dim underline gray dib helvetica">Jack Veiga</a>
+        <a href="https://twitter.com/jackveiga" target="_blank" rel="noopener noreferrer" class="f7 link dim underline gray dib helvetica">Jack Veiga</a>
     </div>
   </Main>
 )

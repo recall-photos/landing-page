@@ -128,10 +128,10 @@ class IndexPage extends React.Component {
               </ContactsParagraph>
               <Form />
               <ContactsIcons>
-              <a href="https://github.com/recall-photos" target="_blank" rel="noopener noreferrer">
+              <a href="https://twitter.com/recallphotos" target="_blank" rel="noopener noreferrer">
                 <TwitterRound class="mr3 dim pointer" />
               </a>
-              <a href="https://github.com/recall-photos/recall-app" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/recall-photos" target="_blank" rel="noopener noreferrer">
                 <GithubRound class="dim pointer" />
               </a>
               </ContactsIcons>
