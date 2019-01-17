@@ -1,6 +1,4 @@
-# recall.photos
-
-Landing page for the [Recall](https://recall.photos) app.
+This repo is deprecated. The landing page is now located within the app https://github.com/recall-photos/recall-app
 
 ## Development
 
